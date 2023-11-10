@@ -1,3 +1,4 @@
+<?php require 'baseD.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +25,7 @@ text-align: center;
 <body>
 
 <div>
-    <form action="pagina_datos_perfiles.php">
+    <form action="" method="post">
 
         <p>
             <label>Introduzca su email:
@@ -32,15 +33,15 @@ text-align: center;
             </label>
             <br>
             <label>Introduzca su nombre de usuario:
-                <input type="text" name="usu">
+                <input type="text" name="nick">
             </label>
             <br>
             <label>Introduzca su contraseña:
-                <input type="password" name="con">
+                <input type="password" name="contrasena">
             </label>
             <br>
             <label>Repita la contraseña:
-                <input type="password" name="con2">
+                <input type="password" name="confirmacion_contrasena">
             </label>
         </p>
         <p>Perfil:
@@ -51,7 +52,8 @@ text-align: center;
             </select>
         </p>
         <p>
-            <input type="submit" name="enviando" value="Registro">
+            <input type="submit" name="registrar" value="Registro">
+            <a href="loginUsu.php"><input type="button" value="Login"></a>
             
         </p>
     </form>

@@ -1,3 +1,4 @@
+<?php require 'baseD.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,11 +23,11 @@ div{
 <body>
     
 <div>
-<form action="pagina_datos_perfiles.php" method="get">
+<form action="" method="post">
 
 <p>
-    <label>Usuario :
-        <input type="text" name="usu">
+    <label>E-mail :
+        <input type="email" name="e-mail">
     </label>
     <br>
     <label>Contraseña:
@@ -35,6 +36,7 @@ div{
 </p>
 <p>
 <input type="submit" name="enviando" value="Login">
+<a href="registroUsu.php"><input type="button" value="Registro"></a>
 </p>
 
 </form>
